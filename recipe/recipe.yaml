@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.0"
+  version: "1.0.1"
 
 package:
   name: pymseed
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pymseed/pymseed-${{ version }}.tar.gz
-  sha256: 00373a1f63476f0bff3c58eab94be7a4f3b9efb667ada2eba9299a1a876a8460
+  sha256: abf68a6053aac5c1f67c1acb2f799468e7072d4776d7164da643feb42a6778e0
 
 build:
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
